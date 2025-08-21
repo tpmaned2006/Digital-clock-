@@ -54,24 +54,6 @@ input[type="time"] {
     font-size: 1.2em;
     border-radius: 10px;
     border: none;
-    outline: none;
-    text-align: center;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    background: linear-gradient(45deg, #ff6a00, #ee0979);
-    color: #fff;
-    font-weight: bold;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    transition: transform 0.2s;
-}
-
-button:hover {
-    transform: scale(1.1);
-}
+style.css [dos] (12:30 21/08/2025)                                                                                                                                                                         1,1 Top
+-- INSERT --
 
