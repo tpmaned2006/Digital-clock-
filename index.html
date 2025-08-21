@@ -3,18 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Colorful Digital Clock</title>
+<title>Advanced Digital Clock</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
     <h1>🌈 Digital Clock</h1>
-    <div class="clock" id="clock">00:00:00</div>
 
+    <!-- Clock and Date -->
+    <div class="clock" id="clock">00:00:00</div>
+    <div class="date" id="date">DD/MM/YYYY</div>
+
+    <!-- Alarm Feature -->
     <div class="alarm-container">
         <input type="time" id="alarmTime">
         <button id="setAlarmBtn">Set Alarm ⏰</button>
+        <ul id="alarmList"></ul>
+    </div>
+
+    <!-- Stopwatch Feature -->
+    <div class="stopwatch">
+        <h2>⏱️ Stopwatch</h2>
+        <div id="stopwatchDisplay">00:00:00</div>
+        <button id="startStopwatch">Start</button>
+        <button id="stopStopwatch">Stop</button>
+        <button id="resetStopwatch">Reset</button>
+    </div>
+
+    <!-- Timer Feature -->
+    <div class="timer">
+        <h2>⏲️ Timer</h2>
+        <input type="number" id="timerInput" placeholder="Enter seconds">
+        <div id="timerDisplay">00:00</div>
+        <button id="startTimer">Start Timer</button>
+        <button id="resetTimer">Reset Timer</button>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button id="themeToggle">🌙 Toggle Dark/Light Mode</button>
+
+    <!-- Background Color -->
+    <div class="color-picker">
+        <label>🎨 Choose Background: </label>
+        <input type="color" id="bgColorPicker">
     </div>
 </div>
 
