@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Advanced Digital Clock</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Digital Clock</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main class="container">
+    <header>
+      <h1>🌈 Digital Clock</h1>
+    </header>
 
-<div class="container">
-    <h1>🌈 Digital Clock</h1>
+    <section aria-label="Clock and Date">
+      <div class="clock" id="clock">00:00:00</div>
+      <div class="date" id="date">DD/MM/YYYY</div>
+    </section>
 
-    <!-- Clock and Date -->
-    <div class="clock" id="clock">00:00:00</div>
-    <div class="date" id="date">DD/MM/YYYY</div>
+    <section class="alarm-container" aria-label="Alarm Feature">
+      <label for="alarmTime">Set Alarm:</label>
+      <input type="time" id="alarmTime">
+      <button id="setAlarmBtn">Set Alarm ⏰</button>
+      <ul id="alarmList"></ul>
+    </section>
 
-    <!-- Alarm Feature -->
-    <div class="alarm-container">
-        <input type="time" id="alarmTime">
-        <button id="setAlarmBtn">Set Alarm ⏰</button>
-        <ul id="alarmList"></ul>
-    </div>
+    <section class="stopwatch" aria-label="Stopwatch Feature">
+      <h2>⏱️ Stopwatch</h2>
+      <div id="stopwatchDisplay">00:00:00</div>
+      <button id="startStopwatch">Start</button>
+      <button id="stopStopwatch">Stop</button>
+      <button id="resetStopwatch">Reset</button>
+    </section>
 
-    <!-- Stopwatch Feature -->
-    <div class="stopwatch">
-        <h2>⏱️ Stopwatch</h2>
-        <div id="stopwatchDisplay">00:00:00</div>
-        <button id="startStopwatch">Start</button>
-        <button id="stopStopwatch">Stop</button>
-        <button id="resetStopwatch">Reset</button>
-    </div>
+    <section class="timer" aria-label="Timer Feature">
+      <h2>⏲️ Timer</h2>
+      <label for="timerInput">Enter seconds:</label>
+      <input type="number" id="timerInput" placeholder="Enter seconds">
+      <div id="timerDisplay">00:00</div>
+      <button id="startTimer">Start Timer</button>
+      <button id="resetTimer">Reset Timer</button>
+    </section>
 
-    <!-- Timer Feature -->
-    <div class="timer">
-        <h2>⏲️ Timer</h2>
-        <input type="number" id="timerInput" placeholder="Enter seconds">
-        <div id="timerDisplay">00:00</div>
-        <button id="startTimer">Start Timer</button>
-        <button id="resetTimer">Reset Timer</button>
-    </div>
+    <section>
+      <button id="themeToggle">🌙 Toggle Dark/Light Mode</button>
+    </section>
 
-    <!-- Theme Toggle -->
-    <button id="themeToggle">🌙 Toggle Dark/Light Mode</button>
+    <section class="color-picker">
+      <label for="bgColorPicker">🎨 Choose Background: </label>
+      <input type="color" id="bgColorPicker">
+    </section>
+  </main>
 
-    <!-- Background Color -->
-    <div class="color-picker">
-        <label>🎨 Choose Background: </label>
-        <input type="color" id="bgColorPicker">
-    </div>
-</div>
-
-<audio id="alarmSound" src="https://www.soundjay.com/buttons/sounds/beep-07.mp3" preload="auto"></audio>
-
-<script src="script.js"></script>
+  <audio id="alarmSound" src="https://www.soundjay.com/buttons/sounds/beep-07.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
 </body>
 </html>
